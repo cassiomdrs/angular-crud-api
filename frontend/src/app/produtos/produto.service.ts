@@ -21,7 +21,7 @@ export class ProdutoService {
   buscarPorId(id: number): Observable<Produto> {
     // TODO: implementar GET /api/products/:id
     // Retorno vazio temporário para não quebrar a compilação
-    return of ({} as Produto);
+    return this.http.get<Produto>(`${this.apiUrl}/${id}`);
   }
 
   cadastrar(produto: Produto): Observable<Produto> {
