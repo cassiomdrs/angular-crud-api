@@ -14,7 +14,7 @@ export class ProdutoService {
 
   listar(): Observable<Produto[]> {
     // TODO: implementar GET /api/products
-    return of([]);
+    return this.http.get<Produto[]>(this.apiUrl);
     
   }
 
