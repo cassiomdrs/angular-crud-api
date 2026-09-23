@@ -56,11 +56,11 @@
     "imagem": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
   },
   {
-    "id": 8,
-    "nome": "Esse é o nome do produto",
+    "id": 9,
+    "nome": "Iphone 17",
     "descricao": "Um teste",
-    "categoria": "Teste",
-    "preco": 50,
-    "imagem": ""
+    "categoria": "Celular",
+    "preco": 23000,
+    "imagem": "https://www.iplace.com.br/ccstore/v1/images/?source=/file/v3658312454646469719/products/100072474.00.639227483336215125-apple-iphone-17-pro-max.jpg"
   }
 ]

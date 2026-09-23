@@ -26,18 +26,18 @@ export class ProdutoService {
 
   cadastrar(produto: Produto): Observable<Produto> {
     // TODO: implementar POST /api/products
-    return of ({} as Produto);
+    return this.http.post<Produto>(this.apiUrl, produto);
   }
 
   atualizar(id: number, produto: Produto): Observable<Produto> {
     // TODO: implementar PUT /api/products/:id
     // Retorno temporário para não quebrar a compilação
-    return of ({} as Produto);
+    return this.http.put<Produto>(`${this.apiUrl}/${id}`, produto);
   }
 
   excluir(id: number): Observable<void> {
     // TODO: implementar DELETE /api/products/:id
     // Retorno temporário para não quebrar a compilação
-    return of ();
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }
